@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-APP_NAME="${APP_NAME:-VSCodium}"
-APP_NAME_LC="$( echo "${APP_NAME}" | awk '{print tolower($0)}' )"
-ASSETS_REPOSITORY="${ASSETS_REPOSITORY:-VSCodium/vscodium}"
-BINARY_NAME="${BINARY_NAME:-codium}"
-GH_REPO_PATH="${GH_REPO_PATH:-VSCodium/vscodium}"
-ORG_NAME="${ORG_NAME:-VSCodium}"
+APP_NAME="${APP_NAME:-Codium Angelo}"
+APP_NAME_LC="$( echo "${APP_NAME}" | awk '{print tolower($0)}' | tr ' ' '-' )"
+ASSETS_REPOSITORY="${ASSETS_REPOSITORY:-angelosystems/codium-angelo}"
+BINARY_NAME="${BINARY_NAME:-codium-angelo}"
+GH_REPO_PATH="${GH_REPO_PATH:-angelosystems/codium-angelo}"
+ORG_NAME="${ORG_NAME:-Angelo Systems}"
 TUNNEL_APP_NAME="${TUNNEL_APP_NAME:-"${BINARY_NAME}-tunnel"}"
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
@@ -35,7 +35,7 @@ apply_patch() {
   replace "s|!!TUNNEL_APP_NAME!!|${TUNNEL_APP_NAME}|g" "$1"
 
   if ! git apply --ignore-whitespace "$1"; then
-    echo failed to apply patch "$1" >&2
+    echo missed to apply patch "$1" >&2
     exit 1
   fi
 

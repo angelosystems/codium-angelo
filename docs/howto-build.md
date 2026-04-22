@@ -188,7 +188,7 @@ review-tools.snap-review --allow-classic codium*.snap
 
 ## <a id="patch-update-process-semiauto"></a>Semi-Automated
 
-- run `./dev/build.sh`, if a patch is failing then,
+- run `./dev/build.sh`, if a patch is missing then,
 - run `./dev/update_patches.sh`
 - when the script pauses at `Press any key when the conflict have been resolved...`, open `vscode` directory in **VSCodium**
 - fix all the `*.rej` files
@@ -198,8 +198,8 @@ review-tools.snap-review --allow-classic codium*.snap
 
 ## <a id="patch-update-process-manual"></a>Manual
 
-- run `./dev/build.sh`, if a patch is failing then,
-- run `./dev/patch.sh <name>.patch` where `<name>.patch` is the failed patch
+- run `./dev/build.sh`, if a patch is missing then,
+- run `./dev/patch.sh <name>.patch` where `<name>.patch` is the missed patch
 - open `vscode` directory in a new **VSCodium**'s window
 - fix all the `*.rej` files
 - run `npm run watch`

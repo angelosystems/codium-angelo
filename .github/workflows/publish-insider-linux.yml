@@ -124,7 +124,7 @@ jobs:
     permissions:
       contents: write
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         include:
         - slug: X64
@@ -238,7 +238,7 @@ jobs:
     permissions:
       contents: write
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         include:
         - slug: X64
@@ -342,7 +342,7 @@ jobs:
     permissions:
       contents: write
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         include:
         - slug: X64
@@ -420,7 +420,7 @@ jobs:
     environment: publish
     permissions: {}
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         include:
         - package_name: vscodium-insiders-bin
@@ -453,7 +453,7 @@ jobs:
       RELEASE_VERSION: ${{ needs.check.outputs.RELEASE_VERSION }}
       SNAP_NAME: codium-insiders
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         platform:
         - amd64

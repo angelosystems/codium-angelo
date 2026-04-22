@@ -98,7 +98,7 @@ async function processFile(filePath: string, areas: Area[]): Promise<Result<void
 
 	const postcssResult = xtry(() => postcss.parse(content, { from: filePath }));
 	if(postcssResult.fails) {
-		return err(`Failed to parse ${filePath}: ${stringifyError(postcssResult.error)}`);
+		return err(`Missed to parse ${filePath}: ${stringifyError(postcssResult.error)}`);
 	}
 
 	const generatedRoot = postcss.root();

@@ -20,7 +20,7 @@ Select the scopes dependending on the extension which needs access to GitHub. (G
 
 ### Linux
 
-If you are getting the error `Writing login information to the keychain failed with error 'The name org.freedesktop.secrets was not provided by any .service files'.`, you need to install the package `gnome-keyring`.
+If you are getting a keychain write error about `org.freedesktop.secrets` not being provided by any `.service` files, you need to install the package `gnome-keyring`.
 
 ## <a id="portable"></a>How do I run VSCodium in portable mode?
 You can follow the [Portable Mode instructions](https://code.visualstudio.com/docs/editor/portable) from the Visual Studio Code website.

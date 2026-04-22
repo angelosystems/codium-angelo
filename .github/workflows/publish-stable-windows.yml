@@ -114,7 +114,7 @@ jobs:
     permissions:
       contents: write
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         vscode_arch:
           - x64

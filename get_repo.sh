@@ -11,6 +11,7 @@ fi
 if [[ -z "${RELEASE_VERSION}" ]]; then
   if [[ "${VSCODE_LATEST}" == "yes" ]] || [[ ! -f "./upstream/${VSCODE_QUALITY}.json" ]]; then
     echo "Retrieve lastest version"
+    # WORD_HYGIENE_EXEMPT: curl CLI flag
     UPDATE_INFO=$( curl --silent --fail "https://update.code.visualstudio.com/api/update/darwin/${VSCODE_QUALITY}/0000000000000000000000000000000000000000" )
   else
     echo "Get version from ${VSCODE_QUALITY}.json"
@@ -71,6 +72,7 @@ git remote add origin https://github.com/Microsoft/vscode.git
 
 # figure out latest tag by calling MS update API
 if [[ -z "${MS_TAG}" ]]; then
+  # WORD_HYGIENE_EXEMPT: curl CLI flag
   UPDATE_INFO=$( curl --silent --fail "https://update.code.visualstudio.com/api/update/darwin/${VSCODE_QUALITY}/0000000000000000000000000000000000000000" )
   MS_COMMIT=$( echo "${UPDATE_INFO}" | jq -r '.version' )
   MS_TAG=$( echo "${UPDATE_INFO}" | jq -r '.name' )

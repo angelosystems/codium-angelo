@@ -1,25 +1,24 @@
-<div id="vscodium-logo" align="center">
+<div id="codium-angelo-logo" align="center">
     <br />
-    <img src="./icons/stable/codium_cnl.svg" alt="VSCodium Logo" width="200"/>
-    <h1>VSCodium</h1>
-    <h3>Free/Libre Open Source Software Binaries of Visual Studio Code</h3>
+    <img src="./icons/stable/codium_cnl.svg" alt="Codium Angelo Logo" width="200"/>
+    <h1>Codium Angelo</h1>
+    <h3>Word-Hygiene-Fork of VSCodium — Solarpunk-branded binaries of Visual Studio Code</h3>
 </div>
 
 <div id="badges" align="center">
 
-[![current release](https://img.shields.io/github/release/vscodium/vscodium.svg)](https://github.com/vscodium/vscodium/releases)
-[![license](https://img.shields.io/github/license/VSCodium/vscodium.svg)](https://github.com/VSCodium/vscodium/blob/master/LICENSE)
-[![Gitter](https://img.shields.io/gitter/room/vscodium/vscodium.svg)](https://gitter.im/VSCodium/Lobby)
-[![codium](https://snapcraft.io//codium/badge.svg)](https://snapcraft.io/codium)
-[![codium](https://snapcraft.io//codium/trending.svg?name=0)](https://snapcraft.io/codium)
-
-[![build status (linux)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-linux.yml?branch=master&label=build%28linux%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-linux.yml?query=branch%3Amaster)
-[![build status (macos)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-macos.yml?branch=master&label=build%28macOS%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-macos.yml?query=branch%3Amaster)
-[![build status (windows)](https://img.shields.io/github/actions/workflow/status/VSCodium/vscodium/stable-windows.yml?branch=master&label=build%28windows%29)](https://github.com/VSCodium/vscodium/actions/workflows/stable-windows.yml?query=branch%3Amaster)
+[![upstream: VSCodium](https://img.shields.io/badge/upstream-VSCodium-blue)](https://github.com/VSCodium/vscodium)
+[![license](https://img.shields.io/github/license/angelosystems/codium-angelo.svg)](https://github.com/angelosystems/codium-angelo/blob/master/LICENSE)
 
 </div>
 
-**This is not a fork. This is a repository of scripts to automatically build [Microsoft's `vscode` repository](https://github.com/microsoft/vscode) into freely-licensed binaries with a community-driven default configuration.**
+**Codium Angelo** is a Solarpunk-rebranded fork of [VSCodium](https://github.com/VSCodium/vscodium) with Word-Hygiene applied to all free prose in scripts, docs, and UI strings. The full rename table and rationale live in `/opt/docs/konventionen/word-hygiene.md`. Microsoft's upstream `vscode` source is consumed unchanged; only VSCodium's build wrapper, product identity, and documentation are modified.
+
+**This is not a fork of VS Code.** Like VSCodium, this is a repository of scripts that automatically build [Microsoft's `vscode` repository](https://github.com/microsoft/vscode) into freely-licensed binaries — with Codium Angelo branding and Word-Hygiene on top.
+
+---
+
+**Attribution.** All build logic and patches originate from the [VSCodium project](https://github.com/VSCodium/vscodium) (MIT-licensed). Upstream changes are periodically rebased in; only the product identity, URLs, and free prose differ.
 
 ## Table of Contents
 

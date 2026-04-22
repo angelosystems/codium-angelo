@@ -38,7 +38,7 @@ jobs:
     env:
       VSCODE_ARCH: ${{ matrix.vscode_arch }}
     strategy:
-      fail-fast: false
+      fail-fast: false # WORD_HYGIENE_EXEMPT: stdlib (GitHub Actions schema keyword)
       matrix:
         include:
           - runner: macos-15-intel
